@@ -1,10 +1,11 @@
 import json
 import requests
+import os
 
 
 file_counter = 0
 offset_counter = 1
-token = 'vgExQgdFRrflyczUiJQVHBXBqzMwqpXz'
+token = os.environ.get('token')
 
 while file_counter <= 39:
     name = ("location_" + str(file_counter))
