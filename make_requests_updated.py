@@ -5,7 +5,7 @@ import os
 
 file_counter = 0
 offset_counter = 1
-token = os.environ.get('token')
+token = os.environ.get('noaa_token')
 
 while file_counter <= 39:
     name = ("location_" + str(file_counter))
@@ -19,4 +19,3 @@ while file_counter <= 39:
         json.dump(data, outfile)
     file_counter += 1
     offset_counter += 1000
-
